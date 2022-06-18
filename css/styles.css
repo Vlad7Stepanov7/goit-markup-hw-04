@@ -233,17 +233,19 @@ color: var(--complementary-color);
     display: flex;
 }
 .container-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 width: 270px;
+height: 120px;
 margin-bottom: 30px;
 border-radius: 4px;
-text-align: center;
 background-color: #F5F4FA;
 }
 .icon-benefits {
     width: 70px;
     height: 70px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+   
 }
 .list-benefits > .items {
     margin-left: 30px;
@@ -348,10 +350,7 @@ justify-content: center;
     width: 20px;
     height: 20px;
 }
-.icon-social-network:hover {
-fill:#fff;;
-}
-.list-social-networks .items {
+.items-icon {
     display: inline-block;
     text-align: center;
     width: 44px;
@@ -359,10 +358,13 @@ fill:#fff;;
     padding: 12px;
     border-radius: 50%;
 }
-.list-social-networks .items:hover {
+.items-icon:hover {
    background-color: var(--complementary-color);
 }
-.list-social-networks .items:nth-child(n+2) {
+.items-icon:hover .icon-social-network {
+    fill: #fff;
+}
+.items-icon:nth-child(n+2) {
     margin-left: 10px;
 }
 
@@ -375,55 +377,36 @@ fill:#fff;;
 display: flex;
 justify-content: center;
 }
-.list-clients .items {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-        border-radius: 4px;
-}
-.list-clients > .items:hover {
-   border: 1px solid var(--complementary-color);
-}
-.list-clients > .items:nth-last-child(-n+3){
+.list-clients > .items:nth-child(n+2){
     margin-left: 30px;
 }
-.list-clients > .items:nth-child(3) {
-    margin-left: 28px;
-}
-.list-clients > .items:nth-child(2) {
-    margin-left: 32px;
-} 
-.container-clients {
-  
-}
-.container-clients.yaco {
-    padding: 7px 34px 6.3px 31px ;
-}
-.container-clients.companytab {
-    padding: 3px 33px 5px 33px;
-}
-.container-clients.company {
-    padding: 8.7px 32.86px 10.12px 29.68px;
-}
-.container-clients.foster {
-    padding: 8.7px 10.56px 10.68px 11px;
-}
-.container-clients.brand {
-    padding: 6.77px 21.46px 7.8px 22px;
-}
-.container-clients.companytag {
-    padding: 6.77px 6.21px 9.31px 6px;
-}
+
+ .link-clients {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+ }
+
 .icon-clients {
  fill: var(--icon-color);
 }
-.icon-clients:hover {
+
+.link-clients:hover,
+.link-clients:focus {
+border: 1px solid var(--complementary-color);
+}
+.link-clients:hover .icon-clients,
+.link-clients:focus .icon-clients {
     fill: var(--complementary-color);
 }
+
 /* main portfolio */
 .main-portfolio {
-margin-bottom: 94px;
+
 }
 
 .list-button {
