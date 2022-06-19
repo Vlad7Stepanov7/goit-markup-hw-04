@@ -354,11 +354,14 @@ display: inline-block;
     padding: 12px;
     border-radius: 50%;
 }
-.link-team:hover {
+.link-team:hover,
+.link-team:focus
+ {
   background-color: var(--complementary-color);
 }
 
-.link-team:hover .icon-social-network {
+.link-team:hover .icon-social-network,
+.link-team:focus .icon-social-network {
     fill: #fff;
 }
 .list-social-networks .items:nth-child(n+2) {
