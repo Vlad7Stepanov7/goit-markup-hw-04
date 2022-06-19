@@ -65,7 +65,7 @@ p {
 /* header шапка */
 .header {
 padding-top: 24px;
-padding-bottom: 30px;
+padding-bottom: 25px;
 border-bottom: 1px solid #ECECEC;
 }
 
@@ -345,29 +345,30 @@ font-size: 16px;
 display: flex;
 justify-content: center;
 }
-.icon-social-network {
-    fill: var(--icon-color);
-    width: 20px;
-    height: 20px;
-}
-.items-icon {
-    display: inline-block;
+
+.link-team {
+display: inline-block;
     text-align: center;
     width: 44px;
     height: 44px;
     padding: 12px;
     border-radius: 50%;
 }
-.items-icon:hover {
-   background-color: var(--complementary-color);
-}
-.items-icon:hover .icon-social-network {
-    fill: #fff;
-}
-.items-icon:nth-child(n+2) {
-    margin-left: 10px;
+.link-team:hover {
+  background-color: var(--complementary-color);
 }
 
+.link-team:hover .icon-social-network {
+    fill: #fff;
+}
+.list-social-networks .items:nth-child(n+2) {
+    margin-left: 10px;
+}
+.icon-social-network {
+    fill: var(--icon-color);
+    width: 20px;
+    height: 20px;
+}
 /* regular customers постоянные клиенты*/
 .title-clients {
     margin-bottom: 50px;
